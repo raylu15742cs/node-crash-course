@@ -2,6 +2,6 @@
 
 //console.log(global);
 
-global.setTimeout(() => {
+setTimeout(() => {
     console.log("in the timeout");
 }, 1000);
