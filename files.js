@@ -12,14 +12,22 @@ const fs = require('fs');
 
 // writing files
 
-fs.writeFile('./docs/blog1.txt' , 'hello,world', () => {
-    console.log('file was written');
-});
+// fs.writeFile('./docs/blog1.txt' , 'hello,world', () => {
+//     console.log('file was written');
+// });
 
-fs.writeFile('./docs/blog2.txt', 'hello,again', () => {
-  console.log('file was written');
-});
+// fs.writeFile('./docs/blog2.txt', 'hello,again', () => {
+//   console.log('file was written');
+// });
 
 // directories
+if (!fs.existsSync('./assets')) {
+    fs.mkdir("./assets", (err) => {
+        if (err) {
+            console.log(err)
+        }
+        console.log('folder created')
+    })
+}
 
 // deleting files
