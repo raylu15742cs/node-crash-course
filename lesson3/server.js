@@ -11,10 +11,8 @@ const server = http.createServer(( req , res ) => {
     fs.readFile('./views/index.html', (err, data) => {
         if (err) {
             console.log(err);
-        } else {
-            res.write(data);
         }
-        res.end()
+        res.end(data)
     })
 });
 
