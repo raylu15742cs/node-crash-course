@@ -7,6 +7,9 @@ fs.readFile("./docs/blog1.txt", (err, data) => {
     }
     console.log(data.toString());
 });
+
+console.log("last line")
+
 // writing files
 
 // directories
